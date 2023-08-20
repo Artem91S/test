@@ -1,0 +1,141 @@
+.help_center {
+  z-index: 2;
+  color: #fff;
+  background-image: linear-gradient(to right top, #18221f, #1d1f29, #181b29, #131110, #131212);
+  padding: 1rem 1rem 0;
+  &__title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 140%;
+    opacity: 0.9;
+  }
+  &__info_block {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.info_block {
+  &__description {
+    padding-bottom: 1.25rem;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem;
+    z-index: 10;
+  }
+}
+.description {
+  &__text {
+    width: 15rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%;
+    opacity: 0.9;
+  
+  }
+  &__options {
+    display: none;
+    font-size: 1rem;
+    opacity: 0.5;
+    
+  }
+  &__options_visible{
+    display: none;
+  }
+  &__flag {
+  flex-basis: 30px;
+  cursor: pointer;
+  }
+}
+
+@media (min-width: 375px) {
+  .help_center {
+    &__title {
+      font-size: 1.875rem;
+    }
+  }
+  .info_block {
+    &__description {
+      gap:5rem;
+    }
+  }
+  .description {
+    &__flag {
+      flex-basis: 30px;
+    
+    }
+  }
+}
+@media (min-width: 768px) {
+  .help_center{
+    padding:2.2rem;
+    &__title {
+      font-size: 1.875rem;
+      text-align: start;
+    }
+    &__info_block {
+      flex-flow: row;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap:1rem;
+    }
+  }
+  .info_block {
+    &__description {
+      padding-bottom: 1.1rem;
+    }
+  }
+}
+@media (min-width: 990px) {
+  .help_center {
+    padding: 3rem;
+    &__title {
+      font-size: 2.25rem;
+    }
+    &__info_block {
+      gap:4rem;
+    }
+  }
+  .info_block {
+    &__description {
+      width: 45%;
+    }
+}
+.description {
+  &__text {
+    font-size: 1.125rem;
+    width: 22rem;
+  }
+}
+}
+@media (min-width: 1440px) {
+  .help_center {
+    padding:3rem 10.75rem 5rem; 
+    z-index: 10;
+    &__title {
+      font-size: 2.5rem;
+    }
+  }
+  .description {
+    &__options_visible {
+      display: block;
+      font-size: 1rem;
+      opacity: 0.5;  
+    }
+  }
+
+}
+@media (min-width: 1920px) {
+  .help_center {
+    padding:3rem 14.31rem 5rem; 
+    &__title {
+      font-size: 3.25rem;
+    }
+  }
+}

@@ -1,0 +1,482 @@
+.hero {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: column;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    #1c1818,
+    #34151c,
+    #512437,
+    #582242,
+    #612c3e,
+    #77344d,
+    #3e1e3a,
+    #392538,
+    #4b2132,
+    #140f11,
+    #3e2733,
+    #3f1d23
+  );
+  &__bg {
+    min-width: 320px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+  }
+  &__title {
+    width: 18rem;
+    padding-bottom: 1.14rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  &__description {
+    width: 18rem;
+    padding: 1.25rem 0 1.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  &__bg_Lg{
+    display: none;
+  }
+  &__btn {
+    background: #fc3232;
+    padding: 0.875rem;
+    border-radius: 0.3125rem;
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    z-index: 1;
+  }
+  &__content {
+    z-index: 1;
+  }
+  &__posters {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__info_block {
+    display: none;
+  }
+}
+.posters {
+  &__desktop {
+    width: 14.82038rem;
+    height: 8.38319rem;
+  }
+  &__laptop {
+    width: 5.9999rem;
+    height: 3.6285rem;
+    position: absolute;
+    bottom: 0;
+    left: 0.4rem;
+    z-index: 2;
+  }
+  &__mobile {
+    width: 1.34981rem;
+    height: 2.92306rem;
+    position: absolute;
+    bottom: -0.45rem;
+    left: -0.45rem;
+    z-index: 3;
+  }
+  &__table {
+    width: 2.72925rem;
+    height: 3.935rem;
+    position: absolute;
+    z-index: 4;
+    bottom: -0.45rem;
+    left: 5.35rem;
+  }
+  &__pumpkins {
+    position: absolute;
+    width: 4.23706rem;
+    height: 3.87113rem;
+    bottom: -1.2rem;
+    right: 20px;
+  }
+  &__laptop_part {
+    position: absolute;
+    width: 7.94825rem;
+    height: 0.21688rem;
+    bottom: -0.25rem;
+    left: -0.35rem;
+  }
+  &__laptop_bg {
+    position: absolute;
+    bottom: -0.25rem;
+    left: 1px;
+    width: 6.45rem;
+    height: 4.10169rem;
+  }
+  &__mobile_bg {
+    width: 2.19188rem;
+    height: 3.04844rem;
+    position: absolute;
+    bottom: -0.5rem;
+    left: -0.9rem;
+    z-index: 2;
+  }
+  &__table_bg {
+    width: 4.54875rem;
+    height: 2.9381rem;
+    position: absolute;
+    bottom: 0;
+    left: 4.46rem;
+    z-index: 3;
+    transform: rotate(90deg);
+  }
+}
+.women {
+  &__shadow {
+    position: absolute;
+    box-shadow: 0px 8px 5px 0px rgba(255, 255, 255, 0.45);
+    right: 7rem;
+    bottom: 0.3rem;
+    z-index: 5;
+    width: 3.16331rem;
+    height: 0.05975rem;
+  }
+}
+@media (min-width: 375px) {
+  .hero {
+    &__title {
+      font-size: 1.75rem;
+      width: 21.4375rem;
+    }
+    &__description {
+      width: 21.4375rem;
+      font-size: 1rem;
+    }
+    &__btn {
+      font-size: 1.0625rem;
+    }
+    &__content {
+      padding-bottom: 2.94rem;
+    }
+  }
+  .posters {
+    &__desktop {
+      width: 15.70031rem;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    overflow: hidden;
+    align-items: flex-start;
+    padding: 2.5rem 3rem;
+    &__title {
+      margin: 0;
+      width: 25.175rem;
+      font-size: 2rem;
+      text-align: start;
+      z-index: 1;
+    }
+    &__description {
+      width: 26.775rem;
+      text-align: start;
+      font-size: 1.0625rem;
+    }
+    &__posters {
+      position: absolute;
+      right: -12rem;
+      top: 0;
+    }
+    &__btn {
+      padding: 1rem 1.5rem;
+    }
+    &__info_block {
+      width: 100%;
+      padding-top: 2.12rem;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 1.5rem;
+      z-index: 1;
+    }
+  }
+  .info_block {
+    &__content {
+      text-align: center;
+      display: flex;
+      gap: 0.75rem;
+      flex-flow: column;
+      align-items: center;
+      width: 7.4975rem;
+    }
+    &__content_icon_Lg {
+      display: none;
+    }
+  }
+  .content {
+    &__title {
+      font-weight: 600;
+    }
+    &__description {
+      display: none;
+    }
+  }
+  .posters {
+    &__desktop {
+      width: 27.34894rem;
+      height: 15.47rem;
+    }
+    &__laptop {
+      width: 11.22869rem;
+      height: 6.32063rem;
+      bottom: 0.3rem;
+    }
+    &__laptop_bg {
+      width: 11.93819rem;
+      height: 7.56906rem;
+      bottom: -0.5rem;
+    }
+    &__pumpkins {
+      display: none;
+    }
+    &__mobile {
+      width: 2.49088rem;
+      height: 5.39413rem;
+      bottom: -0.95rem;
+      left: -0.95rem;
+    }
+    &__mobile_bg {
+      // width: 6.71619rem;
+      // height: 3.6255rem;
+      // z-index: 2;
+      // left: -2rem;
+      // bottom:-.5rem;
+    }
+    &__table {
+      width: 4.7365rem;
+      height: 7.26144rem;
+      bottom: -1.2rem;
+      left: 8.25rem;
+    }
+    &__table_bg {
+      bottom: -0.35rem;
+      width: 8.234rem;
+      height: 5.63531rem;
+      left: 6.45rem;
+    }
+    &__laptop_part {
+      width: 14.66738rem;
+      height: 0.40025rem;
+      bottom: -0.55rem;
+      left: -1.3rem;
+    }
+  }
+}
+@media (min-width: 990px) {
+  .hero {
+    &__title {
+      font-size: 2.375rem;
+    }
+    &__description {
+      font-size: 1.125rem;
+      line-height: 140%;
+    }
+    &__posters {
+      right: -9rem;
+    }
+    &__info_block {
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  .info_block {
+    &__content {
+      width: 12.9rem;
+      align-items: flex-start;
+      text-align: start;
+    }
+  }
+  .content {
+    &__title {
+      font-weight: 700;
+    }
+    &__description {
+      display: block;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+  }
+  .posters {
+    &__desktop {
+      width: 32.41356rem;
+      height: 18.33481rem;
+    }
+    &__laptop {
+      width: 13.30806rem;
+      height: 7.49106rem;
+    }
+    &__laptop_bg {
+      width: 14.149rem;
+      height: 8.97075rem;
+    }
+    &__mobile {
+      display: none;
+      width: 2.95213rem;
+      height: 6.39306rem;
+    }
+    &__mobile_bg {
+      width: 3.21913rem;
+      height: 6.66725rem;
+      left: -1.2rem;
+      bottom: -1rem;
+    }
+    &__table {
+      width: 5.36919rem;
+      height: 8.60619rem;
+      bottom: -1.2rem;
+      left: 11.5rem;
+    }
+    &__table_bg {
+      width: 9.29244rem;
+      height: 6.67894rem;
+      left: 9.45rem;
+    }
+    &__pumpkins {
+      width: 8.7475rem;
+      height: 7.99206rem;
+      display: block;
+      right: 15%;
+      z-index: 2;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    overflow: visible;
+    padding: 3.5rem 10.75rem 0;
+    &__title {
+      width: 31.9rem;
+      font-size: 2.625rem;
+
+    }
+    &__description {
+      font-size: 1.25rem;
+      width: 35rem;
+    }
+    &__btn {
+      padding: 1.125rem 2rem;
+      font-size: 1.25rem;
+    }
+    &__posters {
+      top:2rem;
+      right: 1rem;
+    }
+  }
+  .posters {
+    &__desktop {
+      width: 37.47819rem;
+      height: 21.19963rem;
+   
+    }
+    &__laptop {
+      width: 15.38744rem;
+      height: 8.66156rem;
+      left: -2.2rem;
+    }
+    &__laptop_bg {
+      width: 16.17813rem;
+      height: 9.96613rem;
+      left: -3rem;
+    }
+    &__laptop_part {
+      width: 20.09975rem;
+      height: 1.30569rem;
+      left: -4rem;
+    }
+   
+    &__mobile_bg {
+      width: 3.21913rem;
+      height: 6.66725rem;
+      left: -4.2rem;
+   
+    }
+    &__table {
+      width: 6.20188rem;
+      height: 9.95088rem;
+      bottom: -1.3rem;
+      left: 11.7rem;
+    }
+    &__table_bg {
+      width: 10.74438rem;
+      height: 7.7225rem;
+      left: 9.45rem;
+    }
+    &__pumpkins {
+      width: 10.11431rem;
+      height: 9.24081rem;
+      display: block;
+      right: 13%;
+      z-index: 2;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .hero {
+
+    padding: 4.37rem 14.31rem 0;
+    &__title {
+      width: 44.6875rem;
+      font-size: 3.5rem;
+    }
+    &__description {
+      font-size: 1.625rem;
+      width: 44.6875rem;
+    }
+    &__btn {
+      padding: 1.5rem 2.5rem;
+      font-size: 1.625rem;
+    }
+    &__bg {
+      display: none;
+    }
+    &__bg_Lg{
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      bottom: -15%;
+      left: 0;
+      
+    }
+}
+.content{
+  &__title {
+    font-size: 1.5rem;
+    opacity: .7;
+  }
+  &__description {
+    font-size: 1.25rem;
+    opacity: .5;
+  }
+}
+.info_block {
+  &__content_icon {
+    display: none;
+  }
+  &__content_icon_Lg {
+    display: block;
+  }
+}
+}

@@ -1,0 +1,364 @@
+.devices {
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+  align-items: center;
+  background-image: linear-gradient(
+    to right top,
+    #0b0b0b,
+    #161516,
+    #271e21,
+    #3d2434,
+    #51234d
+  );
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 130%;
+    opacity: 0.9;
+  }
+  &__description {
+    color: #fff;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+  }
+  &__btn {
+    background: #fc3232;
+    padding: 0.875rem;
+    border-radius: 0.3125rem;
+    color: #fff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+  }
+  &__screen {
+    width: 16.68881rem;
+    height: 11.41731rem;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.6rem;
+  }
+  &__play_icon {
+    position: absolute;
+  }
+  &__laptop_part {
+    position: absolute;
+    bottom: 15%;
+    left: -2%;
+    z-index: 2;
+  }
+  &__logos {
+    margin: 0 auto;
+    display: flex;
+    padding: 2.2rem 1rem 1.06rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  &__logos_size {
+    flex-basis: 45%;
+  }
+  &__logos_size_Lg {
+    display: none;
+  }
+}
+.screen {
+  &__desktop_size,
+  &__mobile_size,
+  &__table_size,
+  &__laptop_size {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__laptop_size {
+    left: -2%;
+    bottom: 15%;
+  }
+  &__desktop {
+    width: 14.70506rem;
+    height: 8.24219rem;
+  }
+  &__laptop {
+    position: absolute;
+    width: 7.22188rem;
+    height: 4.17481rem;
+  }
+  &__laptop_bg {
+    width: 7.89088rem;
+    height: 4.99944rem;
+  }
+  &__mobile_size {
+    right: 3%;
+    bottom: 13%;
+    z-index: 5;
+  }
+  &__mobile {
+    position: absolute;
+    width: 2.0035rem;
+    height: 4.33875rem;
+  }
+  &__mobile_bg {
+    width: 2.18919rem;
+    height: 4.53369rem;
+  }
+
+  &__table_size {
+    left: 55%;
+    bottom: 15%;
+  }
+  &__table {
+    position: absolute;
+    width: 5.50419rem;
+    height: 3.31969rem;
+  }
+
+  &__table_bg {
+    width: 6.37169rem;
+    height: 3.75819rem;
+  }
+}
+@media (min-width: 375px) {
+  .devices {
+    &__title {
+      font-size: 1.75rem;
+    }
+    &__description {
+      font-size: 1rem;
+    }
+    &__btn {
+      padding: 1rem 1.5rem;
+      font-size: 1.0625rem;
+      line-height: 1.5rem;
+    }
+    &__logos {
+      padding: 0.75rem 1rem;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .devices {
+    padding: 2.5rem 2.5rem 0;
+    align-items: start;
+    position: relative;
+    overflow: hidden;
+    &__title {
+      text-align: start;
+      font-size: 2.5rem;
+      width: 27.1875rem;
+    }
+    &__description {
+      text-align: start;
+      font-size: 1rem;
+      width: 30rem;
+    }
+    &__screen {
+      position: absolute;
+      right: 0;
+    }
+    &__btn {
+      padding: 1rem 1.5rem;
+    }
+    &__logos {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      gap: 0;
+      padding: 1.75rem 0;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 2.5rem;
+    }
+    &__logos_size {
+      flex-basis: 40%;
+    }
+    &__play_icon {
+      width: 2.61775rem;
+      height: 2.61775rem;
+      right: 1.5rem;
+      bottom: 4rem;
+    }
+    &__laptop_part {
+      bottom: -2.8rem;
+      left: 31%;
+      z-index: 1;
+    }
+  }
+  .screen {
+    &__desktop {
+      position: absolute;
+      width: 22.70031rem;
+      height: 12.72356rem;
+    }
+    &__desktop_size {
+      right: 2rem;
+      bottom: 5rem;
+    }
+    &__laptop_size {
+      right: 2rem;
+      bottom: -2.7rem;
+    }
+    &__laptop_bg {
+      width: 12.18119rem;
+      height: 7.71763rem;
+    }
+    &__table_size {
+      bottom: -3.5rem;
+      left: 0;
+      z-index: 3;
+    }
+    &__mobile_size {
+      bottom: -2.2rem;
+      right: 2rem;
+    }
+    &__table_bg {
+      width: 10.23606rem;
+      height: 5.80156rem;
+    }
+    &__laptop {
+      width: 11.45719rem;
+      height: 6.44469rem;
+    }
+    &__table {
+      width: 8.61438rem;
+      height: 5.12463rem;
+    }
+    &__mobile {
+      width: 3.09281rem;
+      height: 6.69775rem;
+    }
+  }
+}
+@media (min-width: 990px) {
+  .devices {
+    padding: 3rem;
+    &__logos {
+      padding: 3rem 0;
+      padding-top: 6rem;
+    }
+    &__laptop_part {
+      left: 25%;
+    }
+    &__logos {
+    }
+  }
+  .screen {
+    &__desktop {
+      position: absolute;
+      width: 28.53944rem;
+      height: 15.99638rem;
+    }
+    &__desktop_size {
+      right: 2rem;
+      bottom: 5rem;
+    }
+    &__laptop_size {
+      left: -30%;
+      bottom: -3.5rem;
+    }
+    &__laptop {
+      right: 2.7rem;
+      width: 14.20425rem;
+      height: 8.10238rem;
+    }
+    &__laptop_bg {
+      width: 20.31444rem;
+      height: 9.70281rem;
+    }
+    &__table_size {
+      bottom: -3.5rem;
+      left: -7rem;
+      z-index: 3;
+    }
+    &__mobile_size {
+      right: 4rem;
+      bottom: -2.9rem;
+    }
+    &__table_bg {
+      width: 11.36613rem;
+      height: 7.29388rem;
+    }
+
+    &__table {
+      width: 10.45881rem;
+      height: 6.44281rem;
+    }
+    &__mobile {
+      width: 3.88838rem;
+      height: 8.42063rem;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .devices {
+    padding: 5rem 3rem 0;
+    overflow: visible;
+    &__title {
+      font-size: 2.5rem;
+      width: 33.125rem;
+    }
+    &__description {
+      width: 33.125rem;
+      opacity: 0.5;
+    }
+    &__btn {
+      padding: 1.125rem 2rem;
+      font-size: 1.25rem;
+    }
+    &__logos_size {
+      flex-basis: 40%;
+     
+    }
+    &__screen {
+      position: absolute;
+      right: 20%;
+    }
+    &__play_icon {
+      right: 0.5rem;
+    }
+    &__laptop_part {
+      width: 18.8155rem;
+      height: 0.586rem;
+      left: -15%;
+      bottom: -3.4rem;
+    }
+  }
+  .screen {
+    &__mobile {
+      width: 6.88838rem;
+      height: 10.42063rem;
+    }
+    &__mobile_size {
+      right: -11rem;
+      bottom: -1rem;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .devices {
+    padding: 6.88rem 14.31rem 0;
+    &__title {
+      font-size: 3.25rem;
+    }
+    &__btn {
+      padding: 1.5rem 2.5rem;
+    }
+     &__logos_size {
+        display: none;
+     }
+     &__logos_size_Lg {
+    display: block;
+  }
+  }
+}
